@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<!--
+    Plain-Academic by Vasilios Mavroudis
+    Released under the  Simplified BSD License/FreeBSD (2-clause) License.
+    https://github.com/mavroudisv/plain-academic
+-->
+
+<html lang="en">
+<head>
+  <title>Manish Goyal's Homepage</title>
+  <meta charset="utf-8">
+  <link rel="icon" href="IMG-6045.jpg" type="image/icon type">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="files/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <link href="files/font.css" rel='stylesheet' type='text/css'>
+</head>
+
+<style>
+
+:root {
+    --primary-color: #1B6FC2;
+    --secondary-color: #536390;
+    --font-color: #23476A;
+    --bg-color: #FEFDF9;
+    --heading-color: #292922;
+}
+
+[data-theme="dark"] {
+    --primary-color: #66CCCC;
+    --secondary-color: #818cab;
+    --font-color: #CCCCCC;
+    --bg-color: #2C2C2C;
+    --heading-color: #818cab;
+}
+
+hr {
+  display: block;
+  margin-top: 2.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: .5px;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--font-color);
+}
+
+a {
+    color: var(--primary-color);
+}
+a:hover {
+    color: var(--primary-color);
+}
+
+/*Simple css to style it like a toggle switch*/
+.theme-switch-wrapper {
+  display: flex;
+  align-items: center;
+
+  em {
+    margin-left: 10px;
+    font-size: 1rem;
+  }
+}
+
+
+.theme-switch {
+  display: inline-block;
+  top: 7px;
+  height: 27px;
+  right: 70px;
+  position: absolute;
+  width: 32px;
+}
+
+.theme-switch input {
+  display:none;
+}
+
+.slider {
+  background-color: #b3b3b3;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 12px;
+  transition: .4s;
+}
+
+.slider:before {
+  background-color: #FEFDF9;
+  top: 0;
+  content: "";
+  height: 15px;
+  left: 0px;
+  position: absolute;
+  transition: .4s;
+  width: 15px;
+}
+
+input:checked + .slider {
+  background-color: #66CCCC;
+}
+
+input:checked + .slider:before {
+  transform: translateX(17px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+</style>
+
+<body>
+
+<!-- Navigation -->
+    <nav class="navbar navbar-inverse">
+      <div class="container">
+    <ul class="nav navbar-nav">
+              <li><a href="https://manishgcs.github.io">Manish Goyal's Homepage</a></li>
+    </ul>
+    <div class="theme-switch-wrapper">
+        <label class="theme-switch" for="checkbox">
+            <input type="checkbox" id="checkbox" />
+            <div class="slider round"></div>
+      </label>
+    </div>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+    <div class="container">
+        <div class="row">
+            <!-- Entries Column -->
+            <div class="col-md-3" >
+                <!-- Contact Info on the Sidebar and image -->
+                <div style="font-family: Arial, Helvetica, sans-serif; font-size: 32px;"><b>Manish Goyal</b></div><br>
+                <img class="img-responsive" src="IMG-6045.jpg" height="400" width="400" alt=""><br>
+                <p>PhD student<br>
+                Department of Computer Science<br>
+                University of North Carolina at Chapel Hill<br></p>
+                <p><b>Email:</b> manishg [at] cs [dot] unc [dot] edu<br>
+                <dd><a href="Manish_Goyal_UNC.pdf" target="_blank">CV</a></dd>
+                <dd><a href="https://github.com/manishgcs">GitHub</a></dd>
+		          <dd><a href="https://dblp.org/pid/62/11208-2.html">DBLP</a></dd>
+              <dd><a href="https://scholar.google.com/citations?user=tPllal8AAAAJ">Google Scholar</a></dd> 
+              <dd><a href="https://www.linkedin.com/in/manishunc/">LinkedIn</a></dd>
+                </p>
+
+            </div>
+
+            <!-- main info -->
+            <div class="col-md-8" >
+                <div style="margin-top:5vh; text-align:justify;">
+
+      <div  style="text-align:left;">
+      <div style="font-family: Arial, Helvetica, sans-serif; font-size: 22px;"><b>About me</b></div><br>
+
+        <p><font size="+1">I am a 4th year doctoral student working with <a href= "https://www.cs.unc.edu/~psd/"> Prof. Parasara Sridhar Duggirala </a> at 
+				<a href = "https://cs.unc.edu/">Computer Science Department</a> at the University of North Carolina at Chapel Hill.</font></p>
+			<p><font size="+1"><The research is focused on Cyber-Physical Systems, their verification and validation using formal methods as well as neural networks.</font></p>
+			<p><font size="+1">Prior to joining grad school, I have worked in <b>Kernel</b> group for SoC verification platform, <b>SpyGlass</b> at 
+				<b>Synopsys India Pvt. Ltd.</b>. I have also worked with <a href="https://sites.google.com/site/frehseg/">Prof. Goran Frehse</a> in <b>Parsers</b> team for 
+				affine linear hybrid systems verification platform, <a href="http://spaceex.imag.fr/">SpaceEx</a>, at <a href="https://www-verimag.imag.fr/">Verimag Research 
+				Lab></a>, Grenoble.</font></p>
+      </div>
+
+      <hr>
+
+      <div  style="margin-top:3vh; text-align:left;">
+      <div style="font-family: Arial, Helvetica, sans-serif; font-size: 22px;"><b>Projects</b></div><br>
+        <p> Currently my research is mainly focused on applications of deep learning in inverse problems and uncertainty quantification. <br>
+      </div>
+
+      <hr>
+
+      <div  style="margin-top:3vh; text-align:left;">
+      <div align="justify", style="font-family: Arial, Helvetica, sans-serif; font-size: 22px;"><b>Publication</b></div><br>
+        <p> Ali Siahkoohi, Gabrio Rizzuti, Mathias Louboutin, et al. <b>Unsupervised data-guided uncertainty analysis in imaging and horizon tracking</b>. In: <i>3rd Annual Meeting of the SIAM Texas-Louisiana Section.</i> Oct. 2020. <br> <u><a href="https://www.dropbox.com/s/7wq68ar5vzpa25i/Sun-13-00-siahkoohi.pdf" target="_blank">[Slides]</a></u> <u><a href="https://www.math.tamu.edu/conferences/SIAMTXLA/index.html" target="_blank">[Link]</a></u><br>
+      </div>
+
+
+      <hr>
+
+ <!-- Other people may like it too! -->
+     <div>
+    <p style="font-size:0.8em; float:right; color:#b5bec9;"> Thanks to <u> <a style="color:#b5bec9" target="_blank" href="https://mavroud.is/">Vasilios Mavroudis</a></u> for the <u><a style="color:#b5bec9" target="_blank" href="https://github.com/mavroudisv/plain-academic">template</a></u>!</p>
+    </div>
+    <!-- /.container -->
+
+
+<script>
+
+const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+
+function switchTheme(e) {
+    if (e.target.checked) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+    }
+    else {
+        document.documentElement.setAttribute('data-theme', 'light');
+    }
+}
+
+toggleSwitch.addEventListener('change', switchTheme, false);
+
+function switchTheme(e) {
+    if (e.target.checked) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        localStorage.setItem('theme', 'dark'); //add this
+    }
+    else {
+        document.documentElement.setAttribute('data-theme', 'light');
+        localStorage.setItem('theme', 'light'); //add this
+    }
+}
+
+
+const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
+
+if (currentTheme) {
+    document.documentElement.setAttribute('data-theme', currentTheme);
+
+    if (currentTheme === 'dark') {
+        toggleSwitch.checked = true;
+    }
+}
+
+</script>
+
+
+</body>
+
+</html>
